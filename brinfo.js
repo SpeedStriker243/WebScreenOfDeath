@@ -22,6 +22,7 @@ function SetBrInfo()
         if (device.os.name === "iOS")
         {
             document.getElementById('ext5').innerHTML = "If problems continue, check your browser settings to see if your browser is misconfigured. If you need to use Private Browsing, tap the tabs button (the layered squares), tap Private, and then tap the new tab button in the centre of the screen.";
+            document.getElementById('BSODDoc').style.fontSize = "xxx-large";
         }
         else
         {
@@ -30,7 +31,14 @@ function SetBrInfo()
     }
     //Check if browser is Opera
     else if (navigator.userAgent.search("Opera") >= 0) {
-        document.getElementById('ext5').innerHTML = "If problems continue, disable or remove any newly installed add-ons. Check your browser settings to see if your browser is misconfigured. If you need to use private mode to browse the web without add-ons, click Menu (File on macOS), and then click New private window.";
+        if (device.os.name === "Mac OS")
+        {
+            document.getElementById('ext5').innerHTML = "If problems continue, disable or remove any newly installed add-ons. Check your browser settings to see if your browser is misconfigured. If you need to use private mode to browse the web without add-ons, click File, and then click New private window.";
+        }
+        else
+        {
+            document.getElementById('ext5').innerHTML = "If problems continue, disable or remove any newly installed add-ons. Check your browser settings to see if your browser is misconfigured. If you need to use private mode to browse the web without add-ons, click Menu, and then click New private window.";
+        }
     }
 }
 
