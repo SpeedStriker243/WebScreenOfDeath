@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+        <script src="ua-parser.js"></script>
         <script src="brinfo.js"></script>
         <title>An error has occurred</title>
         <body onload="SetBrInfo()">
@@ -11,9 +12,9 @@
             <p>UNSPECIFIED_ERROR</p>
             <p>If this is the first time you've seen this page, try visiting the link again. If this screen appears again, follow these steps:</p>
             <p>Check to make sure you have a stable connection to the Internet. <br> If this browser was recently installed, check its respective support page for any solutions.</p>
-            <p>If problems continue, disable or remove any newly installed add-ons. Check your browser settings to see if your browser is misconfigured. If you need to use Private Browsing to browse the web without add-ons, click the hamburger icon near the top left of the window, and then click New Private Window.</p>
+            <p id="ext5">If problems continue, reinstall your browser.</p>
             <p>Browser information:</p>
-            <p id="browsername">No browser information was found. Check to make sure that JavaScript is enabled.</p>
+            <p id="browsername">JavaScript is disabled.</p>
             <p id="browserversion"></p>
         </body>
     </head>
